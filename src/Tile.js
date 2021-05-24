@@ -2,11 +2,11 @@
 import React from 'react';
 
 
-function Tile({tileImage, tileImageAlt, tileParagraphOne, tileParagraphTwo}) {
+function Tile({tileImage,tileTitle, tileImageAlt, tileParagraphOne, tileParagraphTwo}) {
     return (
         <section>
-            <img src={tileImage}/>
-            <h2>{tileImageAlt}</h2>
+            <img src={tileImage} alt={tileImageAlt}/>
+            <h2>{tileTitle}</h2>
             <p>{tileParagraphOne}</p>
             <p>{tileParagraphTwo}</p>
         </section>

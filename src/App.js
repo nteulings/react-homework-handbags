@@ -15,8 +15,9 @@ function App() {
   return (
 
 <>
-      <h1>Handbags & Purses</h1>
-      <nav>
+    <h1>Handbags & Purses</h1>
+
+    <nav>
         <Button
             type={"button"}
             disabled={false}
@@ -32,51 +33,58 @@ function App() {
             disabled={true}
             description={"pre-orders"}
         />
-      </nav>
-<main>
-    <Product
-        spanText={'bestseller'}
-        productImage={bag_1}
-        productDescription={'The handy bag'}
-        productPrice={"€400,-"}
-    />
-    <Product
-        spanText={'bestseller'}
-        productImage={bag_2}
-        productDescription={'The stylish bag'}
-        productPrice={"€250,-"}
-    />
-    <Product
-        spanText={'new collection'}
-        productImage={bag_3}
-        productDescription={'The simple bag'}
-        productPrice={"€300,-"}
-    />
-    <Product
-        spanText={'new collection'}
-        productImage={bag_4}
-        productDescription={'The trendy bag'}
-        productPrice={"€150,-"}
-    />
-</main>
-      <footer>
+    </nav>
+
+    <main>
+        <Product
+            spanText={'bestseller'}
+            productImage={bag_1}
+            productDescription={'The handy bag'}
+            productPrice={"€400,-"}
+        />
+        <Product
+            spanText={'bestseller'}
+            productImage={bag_2}
+            productDescription={'The stylish bag'}
+            productPrice={"€250,-"}
+        />
+        <Product
+            spanText={'new collection'}
+            productImage={bag_3}
+            productDescription={'The simple bag'}
+            productPrice={"€300,-"}
+        />
+        <Product
+            spanText={'new collection'}
+            productImage={bag_4}
+            productDescription={'The trendy bag'}
+            productPrice={"€150,-"}
+        />
+    </main>
+
+    <footer>
         <Tile
-            tileImageAlt={'Our Story'}
+            tileImage={''}
+            tileImageAlt={''}
+            tileTitle={'THE BRAND'}
             tileParagraphOne={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lorem mauris, dictum vitae dapibus ut, tincidunt a sem. Quisque mattis venenatis diam, sed fermentum tellus tempus quis. "}
             tileParagraphTwo={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lorem mauris, dictum vitae dapibus ut, tincidunt a sem. Quisque mattis venenatis diam, sed fermentum tellus tempus quis. '}
         />
         <Tile
             tileImage={brand}
+            tileImageAlt={'brand'}
         />
         <Tile
             tileImage={our_story}
+            tileImageAlt={'our story'}
         />
         <Tile
+            tileImage={''}
+            tileImageAlt={''}
             tileTitle={'OUR STORY'}
-            tileImageAlt={'Our Story'}
             tileParagraphOne={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lorem mauris, dictum vitae dapibus ut, tincidunt a sem. Quisque mattis venenatis diam, sed fermentum tellus tempus quis. Phasellus vitae ex vulputate, vestibulum nibh ac, tempus nisl. Suspendisse viverra, velit non feugiat rhoncus, tortor lacus fringilla leo, et aliquam orci augue id arcu."}
         />
-      </footer>
+    </footer>
 </>
   );
 }
